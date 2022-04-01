@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Types of Variables in js </h1>
+    <h3>Var,let,const</h3>
+    <pre>
+        Var is functional as well as global scope 
+        It can redeclared and initialised 
+        var can be modified later
+
+        Let is a Block scope 
+        redeclaration and reinitialization is not possible 
+        let can be modified later
+
+        const is a Block scope
+        redeclaration and reinitialization is not possible 
+        let cannot  be modified later 
+    </h3>
+    </pre>
+    <h1>Execution-context</h1>
+    <pre>
+       <h3>Execution-context  is divided into two parts</h3> 
+       1.Memory creation phase
+       2.Code Execution phase 
+       <h3>Memory creation phase:</h3>
+       In this phase the variables and functions are stored as key and value pairs .
+       And memory will be allocated to the variables but it will be undefined .
+       <h3>Code Execution phase</h3>
+       In this phase the code gets executed line by line the memory gets allocated to the variables 
+       the undefined gets turned to the particular value .If any functions exits in the code then new execution 
+       context will be created .In this way the execution continues and after the entire code gets executed the 
+       execution context gets deleted from the call stack.
+    </pre>
+    
+   <img src="./ec.png" alt="" style="width: 500px;height: 300px;">
+    <pre>
+        <h2>Print age by using ternary operator.</h2>
+       <h3>var age=30;
+    (age>15) ? "correct age" : "wrong age " 
+
+    output:- 
+    "correct age"
+    </h3> 
+    </pre>
+    <h1>find age using if else condition</h1>
+    <h3>
+    <pre>
+    if(age<15){
+        console.log(Your age not equal to the given age)
+    } else {
+        console.log(Your age is equal to the given age )
+    }
+    </pre>
+    </h3>
+    <h2>Week calender using switch case</h2>
+    <pre>
+        <h3>
+  var Day="monday";
+   switch (Day) {
+    case "monday":
+    console.log("The day is monday");
+    break;
+    case "Tuesday":
+    console.log("The day is Tuesday");
+    break;
+    case "wedday":
+    console.log("The day is Wednesday");
+    break;
+    case "thursday":
+    console.log("The day is Thursday");
+    break;
+    case "friday":
+    console.log("The day is Friday");
+    break;
+    case "saturday":
+    console.log("The day is saturday");
+    break;
+
+    default:
+    break;
+}
+</h3>
+    </pre>
+    <h2>Hoisting </h2>
+    <pre>
+       <h4> Hoisting is the phenomenon by which we can access the variables and functions before we actually initialise it</h4>
+    </pre>
+    <h2>Print the 13th table using for-loop</h2>
+    <h3>
+    <pre>
+        for(i=1;i<=10;i++) {
+            console.log(`13*${i}=${13*i}`)
+        }
+    </pre>
+</h3>
+
+<script src="./script.js"></script>
+</body>
+</html>
